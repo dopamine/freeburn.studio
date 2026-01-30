@@ -1,0 +1,34 @@
+---
+layout: default
+---
+<main class="blog-posts">
+  {%- assign years = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+
+  {%- for year in years %}
+    <h3 id="yr{{ year.name }}" class="post-list-title">{{ year.name }}</h3>
+    {%- assign posts = year.items %}
+    <div class="post-tiles">
+      {%- for post in posts %}
+        <div class="post-tiles-item" data-category="{{ post.categories | join: ';' }}" {% if post.img %}data-img="{{ post.img | img_url_prefix }}"{% endif %}>
+          <a href="{{ post.url | relative_url }}">
+            {%- if post.coverimg -%}
+              <img src="{{ site.imgsrc }}/posts/{{ post.coverimg }}" />
+            {%- endif -%}
+            <span class="post-title">
+              {{ post.title }}
+            </span>
+          </a>
+          <small class="post-tiles-meta">
+            {{ post.date | date: "%e %b" }}
+            &middot;
+            {%- if post.draft != true %}
+              {% include time-to-read.html -%}
+            {% else %}
+              Draft
+            {% endif %}
+          </small>
+        </div>
+      {%- endfor %}
+      </div>
+  {%- endfor %}
+</main>

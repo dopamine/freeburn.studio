@@ -1,0 +1,63 @@
+title: Freeburn Studio
+email: zita@xiple.co.uk
+description: >- # this means to ignore newlines until "baseurl:"
+  Freeburn Art Studio
+baseurl: "" # the subpath of your site, e.g. /blog
+domain: "https://freeburn.studio"
+url: https://freeburn.studio # the base hostname & protocol for your site, e.g. http://example.com
+imgsrc: "https://pub-26130e1261d24da8a06bfc6c60535871.r2.dev"
+twitter_username: zita.freeburn
+github_username:  dopamine
+
+author:
+  name: Zita
+  url: https://blog.xiple.co.uk
+  email: zita/squiggle/xiple.co.uk
+
+nav_pages:
+  - index.md
+  - feed.md
+  - about.md
+
+rss: "atom.xml"
+
+collections:
+  test:
+    output: false
+  work:
+    output: true
+
+# Build settings
+# theme: minima
+
+sass:
+  sass_dir: assets/_scss
+
+plugins:
+  - jekyll-feed
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+exclude:
+ - setup-log.md
+ - setup-ideas.md
+ - .sass-cache/
+ - .jekyll-cache/
+ - gemfiles/
+ - Gemfile
+ - Gemfile.lock
+ - CNAME
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

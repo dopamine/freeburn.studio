@@ -1,0 +1,52 @@
+---
+layout: default
+---
+<main class="blog-posts">
+  {{ content }}
+  
+  <div class="post-tiles-masonry" id="postcards">
+    {% assign max-tiles-count = 11 %}
+    {%- for post in site.posts %}
+      <div class="post-tiles-masonry-item" data-category="{{ post.categories | join: ';' }}" {% if post.img %}data-img="{{ post.img | img_url_prefix }}"{% endif %}>
+        <a href="{{ post.url | relative_url }}">
+          {%- if post.coverimg -%}
+            <img src="{{ site.imgsrc }}/posts/{{ post.coverimg }}" />
+          {%- endif -%}
+          <span class="post-title">
+            {{ post.title }}
+          </span>
+        </a>
+        <small class="post-tiles-meta">
+          {{ post.date | date: "%e %b %Y" }}
+          &middot;
+          {%- if post.draft != true %}
+            {% include time-to-read.html -%}
+          {% else %}
+            Draft
+          {% endif %}
+        </small>
+      </div>
+      {% assign max-tiles-count = max-tiles-count | minus: 1 %}
+      {% if max-tiles-count == 0 %}
+        {% break %}
+      {% endif %}
+    {%- endfor %}
+    <div class="post-tiles-masonry-item">
+      Check out the <a href="{% link about.md %}" style="display:inline">Archives</a> for more.
+    </div>
+  </div>
+</main>
+
+<script>
+  // display tiles only once all images loaded
+  Promise.all(Array.from(document.querySelectorAll(".post-tiles-masonry-item a img")).filter(img => !img.complete).map(img => new Promise(resolve => { img.onload = img.onerror = resolve; }))).then(() => {
+    var masonry = new MiniMasonry({
+        container: '.post-tiles-masonry',
+        baseWidth: 240,
+        gutterX: 40,
+        gutterY: 60,
+        surroundingGutter: false
+    });
+    document.getElementById("postcards").setAttribute("style", "opacity:1");
+  });
+</script>
