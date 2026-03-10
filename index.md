@@ -3,12 +3,13 @@ title: "Work"
 layout: tiled-wall
 ---
 
-Plein air paintings and urban sketches\
-from Scotland and around the world.
+Art from Scotland and around the world, \
+in watercolour, gouache, ink and pencil.
 {:.lead}
-
-
+\
+\
 Favourite subjects
+
 
 <main class="blog-posts">
   
@@ -16,12 +17,12 @@ Favourite subjects
     {%- for page in site.work limit: 9 %}
       <div class="post-tiles-masonry-item" data-category="{{ page.categories | join: ';' }}" {% if page.img %}data-img="{{ page.img | img_url_prefix }}"{% endif %}>
         <a href="{{ page.url | relative_url }}">
-          {%- if page.coverimg -%}
-            <img src="{{ site.imgsrc }}/{{ page.coverimg }}" />
-          {%- endif -%}
           <span class="post-title">
             {{ page.title }}
           </span>
+          {%- if page.coverimg -%}
+            <img src="{{ site.imgsrc }}/{{ page.coverimg }}" />
+          {%- endif -%}
         </a>
       </div>
     {%- endfor %}
