@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Artist bio
+title: About
 permalink: /about/
 ---
 
