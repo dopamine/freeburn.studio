@@ -2,7 +2,7 @@
 layout: post
 title:  "Nature studies"
 
-coverimg: work/nature-studies/cover.png
+coverimg: work/nature-studies/cover.jpg
 ---
 
-![alt]({{ site.imgsrc }}/posts/20XX-XX-XX-folder/image)
+![alt]({{ site.imgsrc }}/work/nature-studies/cover.jpg)

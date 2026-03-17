@@ -1,4 +1,4 @@
-title: Freeburn Studio
+title: freeburn studio
 email: zita@xiple.co.uk
 description: >- # this means to ignore newlines until "baseurl:"
   Freeburn Art Studio
@@ -11,7 +11,7 @@ github_username:  dopamine
 
 author:
   name: Zita
-  url: https://blog.xiple.co.uk
+  url: https://freeburn.studio
   email: zita/squiggle/xiple.co.uk
 
 nav_pages:

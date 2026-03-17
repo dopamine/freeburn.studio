@@ -3,7 +3,7 @@ layout: post
 title:  "Plein air & landscapes"
 draft: true
 
-coverimg: work/plein-air-landscapes/cover.png
+coverimg: work/plein-air-landscapes/cover.jpg
 ---
 
-![alt]({{ site.imgsrc }}/posts/20XX-XX-XX-folder/image)
+![alt]({{ site.imgsrc }}/work/plein-air-landscapes/cover.jpg)

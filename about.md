@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-![Zita's avatar]({{ site.imgsrc }}/assets/avatar.png){:.about-avatar}  
+![Zita's avatar]({{ site.baseurl }}/assets/avatar.png){:.about-avatar}  
 
 Hey there, Zita here.
 

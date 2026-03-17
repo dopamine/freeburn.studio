@@ -3,7 +3,7 @@ layout: post
 title:  "Urban sketching"
 draft: true
 
-coverimg: work/urbna-sketching/cover.png
+coverimg: work/urban-sketching/cover.jpg
 ---
 
-![alt]({{ site.imgsrc }}/posts/20XX-XX-XX-folder/image)
+![alt]({{ site.imgsrc }}/work/urban-sketching/cover.jpg)
