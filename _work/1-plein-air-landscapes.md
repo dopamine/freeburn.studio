@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Plein air & landscapes"
-draft: true
 
 coverimg: work/plein-air-landscapes/cover.jpg
 ---

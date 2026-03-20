@@ -5,35 +5,18 @@ layout: default
   {{ content }}
   
   <div class="post-tiles-masonry" id="postcards">
-    {% assign max-tiles-count = 11 %}
-    {%- for post in site.posts %}
-      <div class="post-tiles-masonry-item" data-category="{{ post.categories | join: ';' }}" {% if post.img %}data-img="{{ post.img | img_url_prefix }}"{% endif %}>
-        <a href="{{ post.url | relative_url }}">
-          {%- if post.coverimg -%}
-            <img src="{{ site.imgsrc }}/posts/{{ post.coverimg }}" />
-          {%- endif -%}
+    {%- for work-theme in site.work limit: 12 %}
+      <div class="post-tiles-masonry-item" data-category="{{ work-theme.categories | join: ';' }}" {% if work-theme.img %}data-img="{{ work-theme.img | img_url_prefix }}"{% endif %}>
+        <a href="{{ work-theme.url | relative_url }}">
           <span class="post-title">
-            {{ post.title }}
+            {{ work-theme.title }}
           </span>
+          {%- if work-theme.coverimg -%}
+            <img src="{{ site.imgsrc }}/{{ work-theme.coverimg }}" />
+          {%- endif -%}
         </a>
-        <small class="post-tiles-meta">
-          {{ post.date | date: "%e %b %Y" }}
-          &middot;
-          {%- if post.draft != true %}
-            {% include time-to-read.html -%}
-          {% else %}
-            Draft
-          {% endif %}
-        </small>
       </div>
-      {% assign max-tiles-count = max-tiles-count | minus: 1 %}
-      {% if max-tiles-count == 0 %}
-        {% break %}
-      {% endif %}
     {%- endfor %}
-    <div class="post-tiles-masonry-item">
-      Check out the <a href="{% link about.md %}" style="display:inline">Archives</a> for more.
-    </div>
   </div>
 </main>
 
@@ -42,7 +25,7 @@ layout: default
   Promise.all(Array.from(document.querySelectorAll(".post-tiles-masonry-item a img")).filter(img => !img.complete).map(img => new Promise(resolve => { img.onload = img.onerror = resolve; }))).then(() => {
     var masonry = new MiniMasonry({
         container: '.post-tiles-masonry',
-        baseWidth: 240,
+        baseWidth: 400,
         gutterX: 40,
         gutterY: 60,
         surroundingGutter: false

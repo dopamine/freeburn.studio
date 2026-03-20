@@ -1,4 +1,5 @@
 ---
 title: "Feed"
-layout: tiled-wall
+layout: archive # testing
+# layout: tiled-wall # production
 ---

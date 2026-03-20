@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Urban sketching"
-draft: true
 
 coverimg: work/urban-sketching/cover.jpg
 ---
