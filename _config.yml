@@ -3,8 +3,8 @@ email: zita@xiple.co.uk
 description: >- # this means to ignore newlines until "baseurl:"
   Freeburn Art Studio
 
-# baseurl: "" # production
-baseurl: "/freeburn.studio" # github pages
+baseurl: "" # custom domain
+# baseurl: "/freeburn.studio" # github pages
 
 domain: "https://freeburn.studio"
 url: https://freeburn.studio # the base hostname & protocol for your site, e.g. http://example.com
