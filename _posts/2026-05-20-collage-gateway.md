@@ -14,6 +14,6 @@ Lately I've been finding a lot of enjoyment in simple mixed media collage. My fa
 
 ![Mixed media collage with text: "Got a question? Ask your GUT"]({{ site.imgsrc }}/work/collage/260519-4-gut.jpg)
 
-![Mixed media collage of negative shapes fo flowers with text: "There's something magical and a little bit mysterious about the fleshiness of feelings."]({{ site.imgsrc }}/work/collage/260519-5-feeling.jpg)
+![Mixed media collage of negative shapes fo flowers with text: "There's something magical and a little bit mysterious about the fleshiness of feelings."]({{ site.imgsrc }}/work/collage/260519-5-feelings.jpg)
 
 ![Mixed media collage of painting hand, with text: "This is something magical. This is what I want every day to be."]({{ site.imgsrc }}/work/collage/260519-6-magical.jpg)
