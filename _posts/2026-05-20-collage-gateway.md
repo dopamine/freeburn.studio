@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Collage as a gateway
-
-
 gallery:
-  - image_path: {{ site.imgsrc }}/work/collage/260519-1-silence.jpg
-    alt: Mixed media collage of a silenced woman with soundwaves where her mouth should be, with text: "in bed by half 11 Literally every day almost afraid to sit with a very strong feeling of overwhelm"
-  - image_path: {{ site.imgsrc }}/work/collage/260519-3-something-new.jpg
-    alt: Mixed media collage with text: "I feel like I don't have a script for building towards something bigger (...) But there is some sort of new thing happening"
+  - url: https://freeburn.studio
+    image_path: https://pub-26130e1261d24da8a06bfc6c60535871.r2.dev/work/collage/260519-1-silence.jpg
+    alt: "Mixed media collage of a silenced woman with soundwaves where her mouth should be, with text: in bed by half 11 Literally every day almost afraid to sit with a very strong feeling of overwhelm"
+  - url: https://freeburn.studio
+    image_path: https://pub-26130e1261d24da8a06bfc6c60535871.r2.dev/work/collage/260519-3-something-new.jpg
+    alt: "Mixed media collage with text: I feel like I don't have a script for building towards something bigger (...) But there is some sort of new thing happening"
 
 ---
 
