@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Collage as a 260519-gateway
+title: Collage as a gateway
 ---
 
 Lately I've been finding a lot of enjoyment in simple mixed media collage. My favourite materials seem to be Scotland's freely available culture magazine [The Skinny](https://www.theskinny.co.uk/) and my own gel prints and painted papers.
